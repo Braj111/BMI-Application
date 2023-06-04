@@ -75,7 +75,17 @@ class _MyHomePageState extends State<MyHomePage> {
         title:Text('BMI Application'),
       ),
       body: Container(
-        color: bgColor,
+        decoration: const BoxDecoration(
+          //gradient: RadialGradient(colors: [Colors.purpleAccent, Colors.pink], center: Alignment.topLeft, stops: [0.0,1.0]),
+          gradient: LinearGradient(
+              colors: [Color(0xffffecd2), Color(0xfffcb69f)],
+              begin: FractionalOffset(1.0, 0.0),
+              end: FractionalOffset(0.0, 1.0)
+          )
+          //gradient: LinearGradient(colors: [Colors.orange, Colors.purple, Colors.blue])
+              ////USE WEBSITE "https://webgradients.com/" FOR COLOR COMBINATION SELECTION
+        ),
+        //color: bgColor,
         child: Center(
           child: Container(
             width: 350,
